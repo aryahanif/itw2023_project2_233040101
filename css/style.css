@@ -1,66 +1,305 @@
+/* Body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Body */
+
+/* Start Home */
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #ffffff;
     padding: 10px 20px;
-
+    background-color: #0c1a9b;
+    top: 0;
 }
 
 .navbar-logo a {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 25px;
-}
-
-.navbar-left,
-.navbar-right {
-    display: flex;
-    align-items: center;
 }
 
 .navbar-left a,
 .navbar-right a {
     margin: 0 10px;
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar-left a:hover,
 .navbar-right a:hover {
     background-color: #555;
+    color: rgb(161, 245, 245);
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
-    .navbar-logo {
-        margin-bottom: 20px;
-    }
+.about h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 50px;
+}
 
-    .navbar-left,
-    .navbar-right {
-        width: 100%;
-        margin-bottom: 10px;
-        justify-content: center;
-    }
+/* End Home */
 
-    .navbar-right {
-        order: -1;
-        /* Membalik urutan navbar-right agar muncul di atas di mode responsif */
-    }
+/* Start Works */
+#foto {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 900px;
+    padding: 16px;
+}
+
+.image {
+    width: 250px;
+    height: 175px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.05);
+}
+
+.works h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 4rem 7% 0.1em;
+}
+
+/* End Works */
+
+/* Start Tools */
+.tools h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 4rem 7% 1em;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.card-text {
+    margin-top: 8px;
+    color: #666;
+}
+
+.card-link:hover {
+    color: #0056b3;
+}
+
+/* Tools End */
+
+/* Start Pricing */
+.pricing h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 4rem 7% 1em;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card {
+    border: 2px solid white;
+}
+
+.pricing-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.pricing-price {
+    margin: 10px 0;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.pricing-features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-features li {
+    margin: 5px 0;
+}
+
+.pricing-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-card:hover {
+    border: 2px solid rgb(34, 34, 206);
+}
+
+/* Pricing End */
+
+/* Start Contact */
+.contact h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 1208px;
+    padding: 50px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #0c1a9b;
+}
+
+.contact-form h2 {
+    margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }

@@ -8,24 +8,226 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <title>Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap" rel="stylesheet">
+    <title>Kanda Art</title>
 </head>
 
-<body>
-    <nav class="navbar">
+<style>
+    #home {
+        background-image: url('img/Gambar-5.jpg');
+        height: 93vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-        <div class="navbar-left">
-            <a href="#">Works</a>
-            <a href="#">Portfolio</a>
+    .typewriter {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 auto;
+    }
+
+    .typewriter::after {
+        content: '|';
+        display: inline-block;
+        width: 0;
+        opacity: 1;
+    }
+
+    @keyframes blink-caret {
+
+        from,
+        to {
+            width: 0;
+        }
+
+        50% {
+            width: 1em;
+        }
+    }
+</style>
+
+<body>
+    <!-- Start Home -->
+    <section id="navbar">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="#works">Works</a>
+                <a href="#tools">Tools</a>
+            </div>
+            <div class="navbar-logo">
+                <a href="#home">Kanda<span style="color: rgb(219, 116, 133);">ART</span></a>
+            </div>
+            <div class="navbar-right">
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </section>
+
+    <section id="home">
+        <div class="about">
+            <h1 class="typewriter"></h1>
         </div>
-        <div class="navbar-logo">
-            <a href="#">Kanda Art</a>
+
+    </section>
+    <!-- End Home -->
+
+    <!-- Start Works -->
+    <section id="works">
+        <div class="works">
+            <h2>Works</h2>
         </div>
-        <div class="navbar-right">
-            <a href="#">Price</a>
-            <a href="#">Contact</a>
+    </section>
+    <section id="foto">
+        <div class="gallery">
+            <div class="image">
+                <img src="img/Gambar-1.png" alt="Image 1">
+            </div>
+            <div class="image">
+                <img src="img/Gambar-2.png" alt="Image 2">
+            </div>
+            <div class="image">
+                <img src="img/Gambar-3.png" alt="Image 3">
+            </div>
+            <div class="image">
+                <img src="img/Gambar-4.png" alt="Image 4">
+            </div>
+            <div class="image">
+                <img src="img/Gambar-5.png" alt="Image 5">
+            </div>
+            <div class="image">
+                <img src="img/Gambar-6.png" alt="Image 5">
+            </div>
         </div>
-    </nav>
+    </section>
+    <!-- End Works -->
+
+    <!-- Start Tools -->
+    <section id="tools">
+        <div class="tools">
+            <h2>Tools</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="img/ig-logo.png" alt="Image 1" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title"><a
+                            href="https://www.instagram.com/kanda_art44?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==">IG
+                            Saya</a></h3>
+                    <p class="card-text">Saya menggunakan instagram untuk mewadahkan hasil kerja saya sekaligus sebagai
+                        semacam portfolio.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/logo-fiverr.png" alt="Image 2" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title"><a href="https://www.fiverr.com/s/yRPm9G">Fiverr Saya</a></h3>
+                    <p class="card-text">Saya menggunakan Fiverr untuk mendapatkan komisi dari orang lain.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/logo-ibis-paint.jpeg" alt="Image 3" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Ibis Paint</h3>
+                    <p class="card-text">Saya menggunakan Ibis Paint untuk menggambar.</p>
+                </div>
+            </div>
+    </section>
+    <!-- End Tools -->
+
+    <!-- Start Pricing -->
+    <section id="pricing">
+        <div class="pricing">
+            <h2>Pricing</h2>
+        </div>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h2 class="pricing-title">Headshot</h2>
+                <p class="pricing-price">10k</p>
+                <ul class="pricing-features">
+                    <li>Hanya lineart</li>
+                    <li>3x Revisi</li>
+                    <li>Pembayaran via dana/gopay</li>
+                </ul>
+                <button class="pricing-button">Bayar Sekarang</button>
+            </div>
+
+            <div class="pricing-card popular">
+                <h2 class="pricing-title">Half Body</h2>
+                <p class="pricing-price">25k</p>
+                <ul class="pricing-features">
+                    <li>Setengah badan</li>
+                    <li>3x Revisi</li>
+                    <li>Berwarna</li>
+                    <li>Pembayaran via dana/gopay</li>
+                </ul>
+                <button class="pricing-button">Bayar Sekarang</button>
+            </div>
+
+            <div class="pricing-card">
+                <h2 class="pricing-title">Full Body</h2>
+                <p class="pricing-price">40k</p>
+                <ul class="pricing-features">
+                    <li>Full Body</li>
+                    <li>3x Revisi</li>
+                    <li>Berwarna</li>
+                    <li>Bisa Request Pose</li>
+                    <li>Pembayaran via dana/gopay</li>
+                </ul>
+                <button class="pricing-button">Bayar Sekarang</button>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing End -->
+
+    <!-- Start Contact -->
+    <section id="contact">
+        <div class="contact">
+            <h2>Contact</h2>
+        </div>
+        <div class="container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <p>&copy; 2024 Arya Raihan Hanif. All rights reserved.</p>
+        </footer>
+    </section>
+    <!-- Contact End -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = "Selamat datang di KandaART!";
+            let index = 0;
+            const typewriterElement = document.querySelector(".typewriter");
+            const caretElement = document.querySelector(".typewriter::after");
+
+            function typeWriter() {
+                if (index < text.length) {
+                    typewriterElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 45);
+                } else {
+                    clearInterval(blinkInterval);
+                }
+            }
+
+            typeWriter();
+
+            const blinkInterval = setInterval(function () {
+                caretElement.style.opacity = (caretElement.style.opacity === '0') ? '1' : '0';
+            }, 750);
+        });
+    </script>
 </body>
 
 </html>
